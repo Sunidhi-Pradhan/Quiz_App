@@ -4,3 +4,11 @@
     font-family: poppins, sans-serif;
     box-sizing: border-box;
 }
+body{
+    background: #001e4d;
+}
+.app{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+}
