@@ -1,17 +1,26 @@
-*{
-    margin  : 0 ;
-    padding : 0 ;
-    font-family: poppins, sans-serif;
+/* This styles everything with zero spacing and sets default font */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
 }
-body{
-    background: #001e4d;
+
+/* Full dark blue background */
+body {
+    background: #001e4d; /* Navy blue background */
+    min-height: 100vh;   /* Full height of screen */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
 }
-.app{
+
+/* White centered quiz card */
+.app {
     background: #fff;
     width: 90%;
     max-width: 600px;
-    margin: 100px auto 0;
     border-radius: 10px;
     padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optional soft shadow */
 }
