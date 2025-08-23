@@ -1,4 +1,4 @@
-const question = [
+const questions = [
     {
         question: "which is largest animal in the world?",
         answer: [
@@ -26,15 +26,7 @@ const question = [
             { text: "Antarctica", correct: true },
         ]
     },
-    {
-        question: "which is the smallest continent in the world?",
-        answer: [
-            { text: "Asia", correct: false},
-            { text: "Australia", correct: true },
-            { text: "Antarctica", correct: false },
-            { text: "Africa", correct: false },
-        ]
-    }
+    
 ];
 
 const questionElement = document.getElementById("question");
@@ -51,3 +43,16 @@ function startQuiz(){
     showQuestion();
 }
 function showQuestion(){
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex +1;
+    questionElement.innerHTML = questionNo + "."+currentQuestion.question;
+
+    currentQuestion.answer.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        // button.addEventListener("click", () => selectAnswer(answer));
+        answerButtons.appendChild(button);
+    });
+}
+startQuiz();
