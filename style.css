@@ -41,4 +41,22 @@ body{
     text-align: left;
     border-radius: 4px;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: #001e4d;
+    color: #fff;
+    border: 1px solid #001e4d;
+}
+#nxt-btn{
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
 }
