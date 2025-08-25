@@ -54,5 +54,6 @@ function showQuestion(){
         // button.addEventListener("click", () => selectAnswer(answer));
         answerButtons.appendChild(button);
     });
+    
 }
 startQuiz();
