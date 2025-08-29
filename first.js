@@ -31,7 +31,7 @@ const questions = [
 
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("nxt-btn");
+const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -49,20 +49,20 @@ function showQuestion(){
     questionElement.innerHTML = questionNo + "."+currentQuestion.question;
 
     currentQuestion.answer.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        // button.addEventListener("click", () => selectAnswer(answer));
+        const btn = document.createElement("button");
+        btn.innerHTML = answer.text;
+        btn.classList.add("btn");
+        // btn.addEventListener("click", () => selectAnswer(answer));
         answerButtons.appendChild(button);
     });
     
 }
 
-function resetState(){
-    nextButton.style.display = "none";
-    while(answerButtons.firstChild){
-        answerButtons.removeChild(answerButtons.firstChild);
-    }
-}
+// function resetState(){
+//     nextButton.style.display = "none";
+//     while(answerButtons.firstChild){
+//         answerButtons.removeChild(answerButtons.firstChild);
+//     }
+// }
 
 startQuiz();

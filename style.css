@@ -30,7 +30,7 @@ body{
     color: #001e4d;
     font-weight: 600;
 }
-.button{
+.btn{
     background: #fff;
     color: #222;
     font-weight: 500;
@@ -43,16 +43,16 @@ body{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.button:hover{
+.btn:hover{
     background: #001e4d;
     color: #fff;
     border: 1px solid #001e4d;
 }
-#nxt-btn{
+#next-btn{
     background: #001e4d;
     color: #fff;
     font-weight: 500;
-    width: 150px;
+    width: 150px;   
     border: 0;
     padding: 10px;
     margin: 20px auto 0;
